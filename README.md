@@ -1,7 +1,9 @@
 # project printf 
 ## pressente by:
 
-: William Cardozo -twee @W_anCardozo
+: William Cardozo -twitter: @W_anCardozo
 
-: Kevin Ramirez -twee @xARKEIN
+: Kevin Ramirez -twitter: @xARKEIN
+
+In this project we will see a printf created by us, with its own parameters and manual.
 
