@@ -20,5 +20,5 @@ int print_string(va_list list)//guarda las strings dadas//
 	{
 		return (NULL);//retorna al NULL si se cumple condicion//
 	}
-	_putchar(a);//imprime iterador//
+	return (a);//imprime iterador//
 }
