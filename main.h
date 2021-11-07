@@ -18,6 +18,6 @@ typedef struct print
 	int (*f)(va_list);
 } print_f;
 
-int _write(char c);
+int _putchar(char c);
 int _printf(const char *format, ...);
 #endif
