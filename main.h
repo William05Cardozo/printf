@@ -20,8 +20,6 @@ typedef struct print
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_int(va_list list);
-int print_dex(va_list list);
 int print_char(va_list list);
 int print_string(va_list list);
 int (*get_commands(const char *s))(va_list);
