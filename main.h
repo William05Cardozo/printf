@@ -24,11 +24,7 @@ void print_all(int n);
 int print_char(va_list list);
 int print_string(va_list list);
 int print_int(va_list list);
-<<<<<<< HEAD
-=======
 int print_dex(va_list);
->>>>>>> 4bd908319a5c549b4a474e63e6b29b3e803202ec
 int print_pc(va_list __attribute__((unused)) list);
-int print_dex(va_list list);
 int (*get_commands(const char *s))(va_list);
 #endif
