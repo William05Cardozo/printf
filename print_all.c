@@ -14,11 +14,6 @@ void print_all(int n)
 		n = -n;
 	}
 
-	else
-	{
-		n = n;
-	}
-
 	if (n / 10)
 	{
 		print_all(n / 10);
