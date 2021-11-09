@@ -10,8 +10,8 @@ int (*get_commands(const char *s))(va_list)
 	print_f print[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"d", print_int},
 		{"i", print_dex},
+		{"d", print_int},
 		{NULL, NULL},
 	};
 
