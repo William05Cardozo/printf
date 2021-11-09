@@ -12,7 +12,7 @@ int (*get_commands(const char *s))(va_list)
 		{"s", print_string},
 		{"%", print_pc},
 		{"i", print_dex},
-		{"d", print_int},
+		{"d", print_dex},
 		{NULL, NULL},
 	};
 
