@@ -10,8 +10,8 @@
 
 int _printf(const char *format, ...)
 {
-	int i, k = 0;
 	va_list list;
+	int i, len = 0;
 	int (*f)(va_list);
 
 	if (format == NULL)
@@ -26,6 +26,7 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
+			len++;
 			continue;
 		}
 		if (format[i + 1] == '\0')
@@ -35,15 +36,15 @@ int _printf(const char *format, ...)
 		f = get_commands(format + i + 1);
 		if (f != NULL)
 		{
-			k = k + f(list);
+			len = len + f(list);
 			i++;
 		}
 		else
 		{
 			_putchar(format[i]);
-			k++;
+			len++;/*contador de el numero de veces que se imprime*/
 		}
 	}
 	va_end(list);
-	return (i);
+	return (len);/*retorna el numero de veces que se imprime*/
 }
