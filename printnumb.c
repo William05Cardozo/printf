@@ -17,7 +17,7 @@ int print_int(va_list list)
 	int sum;
 
 	arr[0] = d / n;
-	for(iter = 1; iter < 10; iter++)
+	for (iter = 1; iter < 10; iter++)
 	{
 		n /= 10;
 		arr[iter] = (d / n) % 10;
@@ -26,15 +26,15 @@ int print_int(va_list list)
 	{
 		_putchar('-');
 		cont++;
-		for(iter = 0; iter < 10; iter++)
+		for (iter = 0; iter < 10; iter++)
 		{
 			arr[iter] *= -1;
 		}
 	}
-	for(iter = 0, sum = 0; iter < 10 ; iter++)
+	for (iter = 0, sum = 0; iter < 10 ; iter++)
 	{
 		sum += arr[iter];
-		if(sum != 0 || iter == 9)
+		if (sum != 0 || iter == 9)
 		{
 			_putchar(arr[iter] + '0');
 			cont++;
@@ -51,6 +51,7 @@ int print_int(va_list list)
 int print_dex(va_list list)
 {
 	int i = va_arg(list, int);
+
 	print_all(i);
 	return (1);
 }
