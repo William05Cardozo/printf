@@ -11,9 +11,9 @@ int (*get_commands(const char *s))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_pc},
-		{"i", print_dex},
+		{"i", print_int},
 		{"d", print_int},
-		{NULL, NULL},
+		{NULL, NULL}
 	};
 
 	int i;
