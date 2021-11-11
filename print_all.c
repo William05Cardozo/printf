@@ -13,15 +13,18 @@ void print_all(int n)
 		_putchar('-');
 		n = -n;
 	}
-	if (n == 0)
+	else
 	{
-		_putchar('0');
+		n = n;
 	}
-
-	if (n / 10)
+	if (n != 0)
 	{
-		print_all(n / 10);
+		if (n / 10)
+		{
+			print_all(n / 10);
+		}
+		_putchar((n % 10) + '0');
 	}
-
-	_putchar((n % 10) + '0');
+	else
+		_putchar(n + '0');
 }
